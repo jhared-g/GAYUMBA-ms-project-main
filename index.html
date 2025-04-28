@@ -1,95 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Middle School Project Template</title> <!--DO NOT CHANGE-->
-        <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Middle School Project Template</title> <!-- Custom title -->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    nav {
+      background-color: #1f2937;
+    }
+    .nav-link {
+      color: #f9fafb !important;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    .nav-link:hover {
+      color: #3b82f6 !important;
+    }
+    header {
+      background: linear-gradient(135deg, #bd1b1b, #3b82f6);
+      color: white;
+      padding: 100px 0;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border: 4px solid white;
+    }
+    h1 {
+      font-weight: 700;
+      margin-top: 20px;
+    }
+    .btn-custom {
+      margin: 10px;
+      border-radius: 30px;
+      padding: 10px 30px;
+      transition: background-color 0.3s;
+    }
+    .btn-custom-primary {
+      background-color: #2e4fb0;
+      color: white;
+      border: none;
+    }
+    .btn-custom-primary:hover {
+      background-color: #6a8beb;
+    }
+    section {
+      padding: 80px 0;
+    }
+    .card {
+      border: none;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #1f2937;
+      color: #f9fafb;
+      text-align: center;
+      padding: 30px 0;
+    }
+  </style>
 </head>
+
 <body>
-    <!--LANDING SECTION-->
-    <header>
-        <nav class="nav">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#hobbies">Hobby</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="container-header">
-                <div class="profile">
-                    <img class="profile-pic" src="images/profile.jpg" alt="">
-                    <h1>Jhared Maroj Gayumba</h1> 
-                </div>
-                <div class="button-group">
-                    <button class="btn-profile">Learn More</button>
-                    <button class="btn-profile">My Hobbies</button>
-                    <button class="btn-profile">Portfolio</button>
-                </div>
-        </div> 
 
-    </header>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#hobbies">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-    <!--ABOUT ME SECTION-->
+<!-- Landing Section -->
+<header id="home" class="text-center">
+  <div class="container">
+    <img src="images/profile.jpg" class="rounded-circle" alt="Profile Picture">
+    <h1>Jhared Maroj Gayumba</h1>
+    <div class="mt-4">
+      <a href="#about" class="btn btn-custom btn-custom-primary">Learn More</a>
+      <a href="#hobbies" class="btn btn-custom btn-outline-light">My Work</a>
+    </div>
+  </div>
+</header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="images/IMG20241011172850.jpg" alt="trippy photo">
-            <div class="card-body">
-              <h5 class="card-title">Myself</h5>
-              <p class="card-text">This is a side picture of myself, which looks like I dropped my phone while taking it.</p>
-              <a href="#" class="btn btn-primary">See More</a>
-                </div>
-            </div>
+<!-- About Me Section -->
+<section id="about">
+  <div class="container text-center">
+    <h2 class="mb-5">About Me</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-4">
+        <div class="card p-3 shadow-sm">
+          <img src="images/IMG20241011172850.jpg" class="card-img-top rounded" alt="Side profile picture of Jhared">
+          <div class="card-body">
+            <h5 class="card-title">Hi, I'm Jhared</h5>
+            <p class="card-text">This is a side photo of myself, which looks like I tripped while taking it. This was taken during a school play.</p>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
+<!-- Portfolio / Hobbies Section -->
+<section id="hobbies" class="bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">My Portfolio</h2>
+    <div class="row">
 
-    <!--HOBBIES SECTION-->
-    <h2>My Portfolio</h2>
-    <section id="hobbies">
-      <div class="container mt-4">
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <div class="card" style="width: 100%;">
-              <img class="card-img-top" src="images/Screenshot 2025-04-24 210622.png" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Stop Motion</h5>
-                <p class="card-text">Before graphic design, we were tasked to create a 1 minute long stop motion video about any regular day to day object's daily life. For mine, its just a pencil writing a short message on a paper as my stop motion.</p>
-                <a href="https://drive.google.com/file/d/1nE4k-0uS6Oq0crsElZHH4IZZu4_fzbQ0/view" class="btn btn-primary">See More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card" style="width: 100%;">
-              <img class="card-img-top" src="images/Lakbay.png" alt="lakbay magazine">
-              <div class="card-body">
-                <h5 class="card-title">Lakbay</h5>
-                <p class="card-text">While learning the different elements of design, we were tasked to make a magazine cover about the Philippine travelling agency, Lakbay. </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card" style="width: 100%;">
-              <img class="card-img-top" src="images/Lakbay Tourism Expo 2025.png" alt="lakbay tourism expo">
-              <div class="card-body">
-                <h5 class="card-title">Lakbay Tourism Expo Collection</h5>
-                <p class="card-text">When we were reached the end of the unit about graphic design, I also made a second promotional poster about Lakbay; as well as a ticket, Instagram post, and merch as tasked.</p>
-                <a href="https://www.canva.com/design/DAGg7ZV8J6g/PjbFlmslNbN8ZQdpJaOwwA/edit" class="btn btn-primary">See More</a>
-              </div>
-            </div>
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/Screenshot 2025-04-24 210622.png" class="card-img-top" alt="Stop Motion Project">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Stop Motion</h5>
+            <p class="card-text">As our final project for stop motion, I created a, 1 minute video showing a pencil writing a message.</p>
+            <a href="https://drive.google.com/file/d/1nE4k-0uS6Oq0crsElZHH4IZZu4_fzbQ0/view" class="btn btn-custom btn-custom-primary mt-auto">View Project</a>
           </div>
         </div>
-  
-    </section>
+      </div>
+
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/Lakbay.png" class="card-img-top" alt="Lakbay Magazine Cover">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Lakbay Magazine Cover</h5>
+            <p class="card-text">As we learned graphic design, we were tasked to design a magazine cover for a Philippine travel agency, called Lakbay.</p>
+            <a href="https://drive.google.com/file/d/198UluBUImT9J7B6VSa-5GKuNfe4PLS7m/view?usp=sharing" class="btn btn-custom btn-custom-primary mt-auto">See More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/Lakbay Tourism Expo 2025.png" class="card-img-top" alt="Lakbay Tourism Expo Project">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Tourism Expo Collection</h5>
+            <p class="card-text">As we reached the end of graphic designing, I further expanded the Lakbay magazine cover with a promotional poster, ticket, an Instagram post, and merch.</p>
+            <a href="https://www.canva.com/design/DAGg7ZV8J6g/PjbFlmslNbN8ZQdpJaOwwA/edit" class="btn btn-custom btn-custom-primary mt-auto">See Project</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact Me Section -->
+<section id="contact">
+  <div class="container">
+    <h2 class="text-center mb-5">Contact Me</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form class="p-4 rounded shadow-sm bg-white">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Write your message..." required></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-custom btn-custom-primary">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 Jhared Maroj Gayumba. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS (for mobile nav menu) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
 </body>
 </html>

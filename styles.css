@@ -82,3 +82,60 @@ header{
 .btn:hover {
     background-color: rgb(216, 106, 106);
 }
+
+.contact-section {
+    padding: 80px 20px;
+    background-color: #f0f4f8;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #092259;
+}
+
+.contact-form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group label {
+    font-weight: 600;
+    color: #555;
+}
+
+.contact-form .form-control {
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.contact-form .btn-send {
+    background-color: #f9bb5f;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #092259;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form .btn-send:hover {
+    background-color: #e69a30;
+    transform: translateY(-2px);
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ffc107; 
+}
+  
